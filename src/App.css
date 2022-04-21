@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+/** @format */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  color: #2a2727f8;
+  /* background-color: #dfdbe5; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  height: 350px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(8, 8, 8, 0.623)),
+    url("./images/background-image.png") center;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display-name {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.display-name h2 {
+  letter-spacing: 2px;
+  color: azure;
+}
+.display-name p {
+  margin-left: 2rem;
+  width: 40rem;
+  border-bottom: 3px solid rgb(238, 238, 238);
+}
+.display-name h2 {
+  /* color: azure; */
 }
 
-.App-link {
-  color: #61dafb;
+.missing {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-align: center;
+  color: rgba(240, 248, 255, 0.829);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.signup {
+  /* width: 90%; */
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: rgba(240, 248, 255, 0.671);
+}
+
+.hero-section h3 {
+  color: rgb(97, 97, 97);
+}
+
+.list {
+  padding: 10px;
+}
+
+.list li {
+  padding: 5px;
+}
+
+.description p {
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.9rem;
+  /* padding: 5px; */
+}
+.email {
+  width: 90%;
+  padding: 15px;
+  outline-style: none;
+  border: none;
+  font-size: 16px;
+  background-color: rgba(31, 31, 31, 0.157);
+  /* border: 0.5px solid rgb(44, 44, 44); */
+  margin-left: 5px;
+}
+.btn {
+  display: inline-block;
+  background: rgb(26, 25, 25);
+  /* color: var(--clr-white); */
+  color: rgba(255, 255, 255, 0.842);
+  width: 10rem;
+  margin-right: 50px;
+  align-items: center;
+  padding: 1rem;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+  margin-left: 40%;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  /* transition: var(--transiti); */
+}
+
+.btn:hover {
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .display-name {
+    /* display: flex; */
+    /* justify-content: center; */
   }
-  to {
-    transform: rotate(360deg);
+  .display-name h2 {
+    font-size: 18px;
+  }
+
+  .display-name p {
+    margin-left: 1rem;
+    width: 8rem;
+    border-bottom: 3px solid rgb(238, 238, 238);
+  }
+  .missing{
+    font-size: 34px;
+  }
+  .signup {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  .btn {
+    margin-left: 25%;
+  }
+  .email {
+    margin-left: -10px;
+    margin-top: 10px;
+    width: 100%;
+
+    align-items: center;
+  }
+
+  .hero-section h2 {
+    font-size: 16px;
   }
 }
